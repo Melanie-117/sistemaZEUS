@@ -1,4 +1,4 @@
-plantilla frontend utilizando 
+Se implementan tecnologias basicas como:
 
  -React
 
@@ -6,16 +6,18 @@ plantilla frontend utilizando
 
  -CSS
 
-librerias como
+Y se integran diversas librerias para mejorar la experiencia de usuario y la visualizacion de datos:
 
- -sweetalert2
+ -SweetAlert2
 
- -Bootstrap 
+ -Bootstrap
 
- -dataTables
+ -DataTables
 
  -Font Awesome
 
- -chart.js
- 
- -JQuery
+ -Chart.js
+
+ -jQuery
+
+El proyecto se levanta y ejecuta mediante Vite utilizando los comandos npm i, npm run dev
