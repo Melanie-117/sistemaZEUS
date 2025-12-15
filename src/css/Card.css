@@ -1,0 +1,105 @@
+.card {
+  max-width: 700px;    /* pero no más de 700px en pantallas grandes */
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff; /* para resaltar sobre el fondo */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;       /* casi todo el ancho de la pantalla */
+    padding: 1.2rem;  /* menos padding */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;       /* ocupa todo el ancho disponible */
+    padding: 1rem;     /* padding reducido */
+  }
+}
+
+
+/* ajuste en los graficos */
+.contenedor_graficos {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.grafico_card {
+  width: 40%;           /* ancho por defecto en pantallas grandes */
+  max-width: 700px;     /* no excede este tamaño */
+  min-width: 250px;     /* no se haga demasiado pequeño */
+
+}
+
+/* Para pantallas medianas */
+@media (max-width: 992px) {
+  .grafico_card {
+    width: 60%;
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .grafico_card {
+    width: 90%;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .grafico_card {
+    width: 100%;
+  }
+}
+
+
+.icono_grafico {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.borde_card{
+   border: 2px solid rgb(76, 82, 156); 
+   border-radius: 5px;
+}
+
+.card input{ 
+  background: rgb(27, 21, 80);
+  color: white;
+}
+
+.contenedor_logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo_zeus{
+  width: 35%;
+  border-radius: 50%;
+}
+
+/* ANIMACION LOADER */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#ffffff 0 0);
+  background: 
+    var(--c) 0    0,
+    var(--c) 0    100%, 
+    var(--c) 50%  50%,   
+    var(--c) 100% 0, 
+    var(--c) 100% 100%;
+  animation: l13 1s infinite alternate;
+}
+
+@keyframes l13 {
+ 0%,10%   {background-size:20% 100%}
+ 50%      {background-size:20%  20%}
+ 90%,100% {background-size:100% 20%}
+}

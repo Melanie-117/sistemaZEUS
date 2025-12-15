@@ -1,0 +1,10 @@
+#root {
+  background-image: linear-gradient(to top, #5755cc, #141630);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* usar min-height en lugar de height evita recortes */
+  padding: 2vw; /* usa unidades relativas al ancho de la ventana */
+  box-sizing: border-box;
+  overflow-y: auto; /* permite scroll vertical si es necesario */
+}

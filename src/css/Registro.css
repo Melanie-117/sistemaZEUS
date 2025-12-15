@@ -1,0 +1,85 @@
+form label, form h4{
+    color: white;
+}
+
+.dark-container{
+    background: #212529;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Base de la card y tabla */
+.card_registro, .table_registros {
+    width: 60%;          /* ancho inicial en pantallas grandes */
+    max-width: 900px;    /* no exceder un ancho máximo */
+    min-width: 300px;    /* no hacerse demasiado pequeño */
+    margin: 0 auto;      /* centrar horizontalmente */
+    box-sizing: border-box;
+}
+
+/* Estilo de la card */
+.card_registro {
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    background-color: #fff; /* para resaltar sobre el fondo */
+}
+
+/* Estilo de la tabla */
+.table_registros {
+    width: 100%;  /* dentro del contenedor comparte el mismo ancho */
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 992px) {
+    .card_registro, .table_registros {
+        width: 80%;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card_registro, .table_registros {
+        width: 95%;
+    }
+}
+
+/* Responsividad para móviles muy pequeños */
+@media (max-width: 480px) {
+    .card_registro, .table_registros {
+        width: 100%;
+    }
+}
+
+
+#nombre_mascota, #select_especie, #select_color, #select_tamano{
+    background: #212529;
+    color: rgb(190, 190, 190);
+}
+#nombre_mascota::placeholder{
+  color: rgb(190, 190, 190);
+}
+
+.contenedor{
+    width: 40%;
+}
+.contenedor_logo{
+    margin-top: 35%;
+}
+.logo_perro_gato{
+    width: 150px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    background-color: #212529 !important;
+    color: white;
+    border-color: #343a40 !important;
+}
